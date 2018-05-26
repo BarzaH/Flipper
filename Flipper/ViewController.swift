@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     lazy var game = FlipperModelController(amountOfCards: cardButtons.count)
     
-    var bb = 10
     
     @IBOutlet var cardButtons: [UIButton]!
     
