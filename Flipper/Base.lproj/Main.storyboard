@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S8t-OW-EMF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IyB-2W-tb7">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,7 +24,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="New Game"/>
                                 <connections>
-                                    <action selector="newGame:" destination="S8t-OW-EMF" eventType="touchUpInside" id="PZC-76-llY"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="Start New Game" id="nXr-O0-EAz"/>
                                 </connections>
                             </button>
@@ -33,7 +32,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <action selector="continueOldGame:" destination="S8t-OW-EMF" eventType="touchUpInside" id="BzL-0K-l8s"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="Continue Old Game" id="k2d-su-37j"/>
                                 </connections>
                             </button>
@@ -41,10 +39,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hD0-ba-HtC"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dhq-8v-PKd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Nu-se-6Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-750" y="33"/>
+            <point key="canvasLocation" x="191.19999999999999" y="32.512315270935964"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -55,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HBb-Ku-c2u">
-                                <rect key="frame" x="16" y="44" width="343" height="214"/>
+                                <rect key="frame" x="16" y="88" width="343" height="214"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SiN-Y1-yBr">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="66"/>
@@ -176,16 +175,6 @@
                                 <color key="textColor" red="0.38447869065278784" green="0.99607843137254903" blue="0.2322846389169157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfF-3N-6Qj">
-                                <rect key="frame" x="156" y="649" width="65" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="backView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGL-j5-0hl"/>
-                                    <segue destination="S8t-OW-EMF" kind="show" identifier="Show First Screen" id="PRN-a1-c6c"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
@@ -216,7 +205,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="33"/>
+            <point key="canvasLocation" x="1420" y="32.512315270935964"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dp9-S4-BYc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IyB-2W-tb7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pO4-ic-yPI">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S8t-OW-EMF" kind="relationship" relationship="rootViewController" id="T7d-d8-tuI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5K-To-00U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-751.20000000000005" y="32.512315270935964"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

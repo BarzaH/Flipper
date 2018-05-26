@@ -30,10 +30,6 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func backView(_ sender: Any) {
-        performSegue(withIdentifier: "Show First Screen", sender: sender)
-    }
-    
     func updateView(){
         
         flipsLabel.text = "Flip Count: \(game.flipperModel.flips)"
@@ -74,17 +70,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         var unusedButtonsIndices = Array(cardButtons.indices)
-//        var ll = Array(game.flipperModel.Cards.indices)
-        
+
         for _ in game.flipperModel.Cards.indices
         {
-//            let card = game.flipperModel.Cards[cardIndex]
             let rndm = Int(arc4random_uniform(UInt32(unusedButtonsIndices.count)))
             game.cardButtonMap.append(unusedButtonsIndices[rndm])
             unusedButtonsIndices.remove(at: rndm)
         }
         
-//        updateView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,10 +86,5 @@ class ViewController: UIViewController {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let firstScreenController = segue.destination as? FirstScreenController {
-            firstScreenController.game = game
-        }
-    }
 }
 

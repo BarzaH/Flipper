@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		092D789220B7491C009EB928 /* FirstSreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092D789120B7491C009EB928 /* FirstSreenController.swift */; };
 		0937A45120B80E4100E78F0B /* FlipperModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45020B80E4100E78F0B /* FlipperModelController.swift */; };
-		0937A45720B933A800E78F0B /* AB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45620B933A800E78F0B /* AB.swift */; };
-		0937A45920B94DE400E78F0B /* BA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45820B94DE400E78F0B /* BA.swift */; };
 		09A4877D2095C83F003B7A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4877C2095C83F003B7A17 /* AppDelegate.swift */; };
 		09A4877F2095C83F003B7A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4877E2095C83F003B7A17 /* ViewController.swift */; };
 		09A487822095C83F003B7A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A487802095C83F003B7A17 /* Main.storyboard */; };
@@ -42,8 +40,6 @@
 /* Begin PBXFileReference section */
 		092D789120B7491C009EB928 /* FirstSreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSreenController.swift; sourceTree = "<group>"; };
 		0937A45020B80E4100E78F0B /* FlipperModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipperModelController.swift; sourceTree = "<group>"; };
-		0937A45620B933A800E78F0B /* AB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB.swift; sourceTree = "<group>"; };
-		0937A45820B94DE400E78F0B /* BA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BA.swift; sourceTree = "<group>"; };
 		09A487792095C83F003B7A17 /* Flipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A4877C2095C83F003B7A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A4877E2095C83F003B7A17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,8 +115,6 @@
 				09A487882095C841003B7A17 /* Info.plist */,
 				092D789120B7491C009EB928 /* FirstSreenController.swift */,
 				0937A45020B80E4100E78F0B /* FlipperModelController.swift */,
-				0937A45620B933A800E78F0B /* AB.swift */,
-				0937A45820B94DE400E78F0B /* BA.swift */,
 			);
 			path = Flipper;
 			sourceTree = "<group>";
@@ -278,9 +272,7 @@
 				092D789220B7491C009EB928 /* FirstSreenController.swift in Sources */,
 				0937A45120B80E4100E78F0B /* FlipperModelController.swift in Sources */,
 				09A487AD2095F598003B7A17 /* Card.swift in Sources */,
-				0937A45720B933A800E78F0B /* AB.swift in Sources */,
 				09A487AB2095F4B2003B7A17 /* FlipperModel.swift in Sources */,
-				0937A45920B94DE400E78F0B /* BA.swift in Sources */,
 				09A4877D2095C83F003B7A17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
