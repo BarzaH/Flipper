@@ -29,11 +29,19 @@ class PhotoShootViewController:  UIViewController, UINavigationControllerDelegat
     
     @IBAction func takePhoto(_ sender: Any) {
         imagePicker =  UIImagePickerController()
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
         imagePicker.delegate = self
         imagePicker.sourceType = .camera
-        
         present(imagePicker, animated: true, completion: nil)
+        }
+        else {
+                imagePicker.delegate = self;
+                imagePicker.sourceType = .photoLibrary
+                present(imagePicker, animated: true, completion: nil)
+        }
     }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)

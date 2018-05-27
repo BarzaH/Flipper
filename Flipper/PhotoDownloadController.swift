@@ -16,6 +16,7 @@ class PhotoDownloadController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var textFieldURL: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
     override func didReceiveMemoryWarning() {
@@ -24,24 +25,21 @@ class PhotoDownloadController: UIViewController {
     }
     
     @IBAction func downloadPhoto(_ sender: Any) {
-        let url:URL = URL(string: ((self.view.subviews[1] as? UITextField)?.text)!)!
+        let url:URL = URL(string: textFieldURL.text!)!
         
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             let urlContents = try? Data(contentsOf: url)
             
             if let imageData = urlContents{
                 DispatchQueue.main.async {
-                    var img = UIImage(data: imageData)
-                    self?.imageView.image = img // Error here
-                    self?.imageView.sizeToFit()
+                    let img = UIImage(data: imageData)
+                    self?.imageView.image = img
+//                    self?.imageView.sizeToFit()
                     
                 }
             }
         }
         
-       
-        
-        var a = 10
     }
     /*
     // MARK: - Navigation

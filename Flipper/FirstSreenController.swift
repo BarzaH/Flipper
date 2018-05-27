@@ -22,7 +22,7 @@ class FirstScreenController: UIViewController {
                 newVC.game = vc.game
             }
         }
-        else if segue.identifier == "New Game"{
+        else if segue.identifier == "Start New Game"{
             vcPointer = segue.destination as? ViewController
         }
         else if segue.identifier == "Settings Segue"{
