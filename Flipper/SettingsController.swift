@@ -8,6 +8,6 @@
 
 import UIKit
 
-class SettingsController: UIViewController {
+class SuitImageSettingsController: LocalizedUIViewController {
 
 }

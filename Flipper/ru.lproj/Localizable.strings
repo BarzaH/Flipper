@@ -1,0 +1,22 @@
+/*
+ Localizable.strings
+ Flipper
+ 
+ Created by Mergaliev Ibragim on 31/05/2018.
+ Copyright © 2018 Mergaliev Ibragim. All rights reserved.
+ */
+
+"New Game" = "Новая игра";
+"Continue Old Game" = "Продолжить прошлую игру";
+"Settings" = "Настройки";
+"Back" = "Назад";
+"Russian" = "Русский";
+"English" = "Английский";
+"Choose Language" = "Выбрать язык";
+"Choose suit image" = "Выбрать изображение рубашки";
+"Paste Your URL" = "Вставьте адрес изображения";
+"Download" = "Скачать";
+"Take Photo" = "Сделать фото";
+"Camera" = "Камера";
+"Download an image" = "Скачать изображение";
+

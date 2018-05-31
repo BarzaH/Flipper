@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoDownloadController: UIViewController {
+class PhotoDownloadController: LocalizedUIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

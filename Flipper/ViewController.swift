@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Localize_Swift
 
-class ViewController: UIViewController {
+class ViewController: LocalizedUIViewController {
 
     lazy var game = FlipperModelController(amountOfCards: cardButtons.count)
     
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         {
             let cardIndex = game.cardButtonMap.index(of: buttonIndex)
             game.chooseCard(index: cardIndex!)
+            
         }
         
         updateView()
@@ -69,6 +71,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         var unusedButtonsIndices = Array(cardButtons.indices)
 
         for _ in game.flipperModel.Cards.indices
@@ -77,7 +80,6 @@ class ViewController: UIViewController {
             game.cardButtonMap.append(unusedButtonsIndices[rndm])
             unusedButtonsIndices.remove(at: rndm)
         }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

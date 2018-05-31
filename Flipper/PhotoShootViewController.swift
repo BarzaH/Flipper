@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoShootViewController:  UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class PhotoShootViewController:  LocalizedUIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
