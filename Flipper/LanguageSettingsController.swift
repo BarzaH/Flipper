@@ -14,7 +14,7 @@ class LanguageSettingsController: LocalizedUIViewController {
     
     @IBAction func setEnglishLanguage(_ sender: UIButton) {
         Localize.setCurrentLanguage("en")
-//        replaceNavBarButtons()
+        replaceNavBarButtons()
         localizeTexts(self.view)
     }
     

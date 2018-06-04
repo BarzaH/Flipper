@@ -14,6 +14,9 @@
 		0937A45F20B9F45C00E78F0B /* PhotoDownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45E20B9F45C00E78F0B /* PhotoDownloadController.swift */; };
 		0943CFD420C0387A00981082 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0943CFD620C0387A00981082 /* Localizable.strings */; };
 		0943CFD920C043AD00981082 /* LanguageSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943CFD820C043AD00981082 /* LanguageSettingsController.swift */; };
+		095C502720C5492100A3D203 /* BackgroundImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C502620C5492100A3D203 /* BackgroundImageDelegate.swift */; };
+		095C502920C5583A00A3D203 /* BackgroundImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C502820C5583A00A3D203 /* BackgroundImageManager.swift */; };
+		0962311F20C4721A0062F32E /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962311E20C4721A0062F32E /* UIButtonExtension.swift */; };
 		098B479420C026B600B7DCA3 /* LocalizedUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B479320C026B600B7DCA3 /* LocalizedUIViewController.swift */; };
 		09A4877D2095C83F003B7A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4877C2095C83F003B7A17 /* AppDelegate.swift */; };
 		09A4877F2095C83F003B7A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4877E2095C83F003B7A17 /* ViewController.swift */; };
@@ -55,12 +58,15 @@
 		0943CFD520C0387A00981082 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0943CFD720C0387C00981082 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0943CFD820C043AD00981082 /* LanguageSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingsController.swift; sourceTree = "<group>"; };
+		095C502620C5492100A3D203 /* BackgroundImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageDelegate.swift; sourceTree = "<group>"; };
+		095C502820C5583A00A3D203 /* BackgroundImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageManager.swift; sourceTree = "<group>"; };
+		0962311E20C4721A0062F32E /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		098B479320C026B600B7DCA3 /* LocalizedUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedUIViewController.swift; sourceTree = "<group>"; };
 		09A487792095C83F003B7A17 /* Flipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A4877C2095C83F003B7A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A4877E2095C83F003B7A17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09A487812095C83F003B7A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		09A487832095C841003B7A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09A487832095C841003B7A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Flipper/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		09A487862095C841003B7A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09A487882095C841003B7A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A4878D2095C841003B7A17 /* FlipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +149,9 @@
 				098B479320C026B600B7DCA3 /* LocalizedUIViewController.swift */,
 				0943CFD620C0387A00981082 /* Localizable.strings */,
 				0943CFD820C043AD00981082 /* LanguageSettingsController.swift */,
+				0962311E20C4721A0062F32E /* UIButtonExtension.swift */,
+				095C502620C5492100A3D203 /* BackgroundImageDelegate.swift */,
+				095C502820C5583A00A3D203 /* BackgroundImageManager.swift */,
 			);
 			path = Flipper;
 			sourceTree = "<group>";
@@ -342,10 +351,13 @@
 				0937A45120B80E4100E78F0B /* FlipperModelController.swift in Sources */,
 				0937A45D20B9EE2400E78F0B /* PhotoShootViewController.swift in Sources */,
 				0937A45B20B9EB2F00E78F0B /* SettingsController.swift in Sources */,
+				0962311F20C4721A0062F32E /* UIButtonExtension.swift in Sources */,
 				0943CFD920C043AD00981082 /* LanguageSettingsController.swift in Sources */,
+				095C502720C5492100A3D203 /* BackgroundImageDelegate.swift in Sources */,
 				098B479420C026B600B7DCA3 /* LocalizedUIViewController.swift in Sources */,
 				09A487AD2095F598003B7A17 /* Card.swift in Sources */,
 				09A487AB2095F4B2003B7A17 /* FlipperModel.swift in Sources */,
+				095C502920C5583A00A3D203 /* BackgroundImageManager.swift in Sources */,
 				09A4877D2095C83F003B7A17 /* AppDelegate.swift in Sources */,
 				0937A45F20B9F45C00E78F0B /* PhotoDownloadController.swift in Sources */,
 			);
