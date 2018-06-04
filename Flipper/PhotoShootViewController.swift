@@ -10,6 +10,10 @@ import UIKit
 
 class PhotoShootViewController:  LocalizedUIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    @IBOutlet weak var takePhotoButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,6 +52,10 @@ class PhotoShootViewController:  LocalizedUIViewController, UINavigationControll
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.saveButton.title = "Save".localized()
+    self.takePhotoButton.setTitle("Take Photo".localized(), for: .normal)
+    }
     
     /*
     // MARK: - Navigation

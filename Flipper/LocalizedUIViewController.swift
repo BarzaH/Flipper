@@ -50,6 +50,8 @@ class LocalizedUIViewController: UIViewController{
         for vc in self.navigationController!.viewControllers{
             vc.navigationItem.backBarButtonItem = button
         }
+        
+        
     }
 }
 

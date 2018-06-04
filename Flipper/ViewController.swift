@@ -35,7 +35,7 @@ class ViewController: LocalizedUIViewController {
     
     func updateView(){
         
-        flipsLabel.text = "Flip Count: \(game.flips)"
+        flipsLabel.text = "Flips Count:".localized() + "\(game.flips)"
         
         for index in game.cards.indices
         {

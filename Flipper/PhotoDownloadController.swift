@@ -8,8 +8,17 @@
 
 import UIKit
 
-class PhotoDownloadController: LocalizedUIViewController {
+class PhotoDownloadController: LocalizedUIViewController, UIPopoverPresentationControllerDelegate {
 
+    @IBOutlet weak var urlLabel: UILabel!
+    
+    
+    @IBOutlet weak var downloadButton: UIButton!
+    
+    @IBOutlet weak var sizeButton: UIBarButtonItem!
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     @IBOutlet weak var textFieldURL: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
@@ -29,15 +38,33 @@ class PhotoDownloadController: LocalizedUIViewController {
     }
     
     
-    @IBAction func showSizeOfImage(_ sender: UIBarButtonItem) {
-        
-        
-    }
     @IBAction func save(_ sender: Any) {
         let backgroundImageManager = BackgroundImageManager()
         backgroundImageManager.write(image: imageView.image!)
         
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "New image"), object: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ImageSizePopoverViewController{
+            if let pvc = vc.popoverPresentationController{
+                pvc.permittedArrowDirections = UIPopoverArrowDirection.any
+                pvc.delegate = self
+                vc.sizeOfImage = UIImagePNGRepresentation(self.imageView.image!)?.count
+            }
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        // return UIModalPresentationStyle.FullScreen
+        return UIModalPresentationStyle.none
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.sizeButton.title = "Show size".localized()
+        self.saveButton.title = "Save".localized()
+        self.urlLabel.text = "Paste Your URL".localized()
+        self.downloadButton.setTitle("Download".localized(), for: .normal)
     }
     
 }
