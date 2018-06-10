@@ -53,18 +53,9 @@ class PhotoShootViewController:  LocalizedUIViewController, UINavigationControll
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.saveButton.title = "Save".localized()
-    self.takePhotoButton.setTitle("Take Photo".localized(), for: .normal)
+//    self.takePhotoButton.setTitle("Take Photo".localized(), for: .normal)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -61,10 +61,9 @@ class PhotoDownloadController: LocalizedUIViewController, UIPopoverPresentationC
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.sizeButton.title = "Show size".localized()
         self.saveButton.title = "Save".localized()
-        self.urlLabel.text = "Paste Your URL".localized()
-        self.downloadButton.setTitle("Download".localized(), for: .normal)
     }
     
 }

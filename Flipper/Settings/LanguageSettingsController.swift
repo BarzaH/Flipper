@@ -12,16 +12,22 @@ import Localize_Swift
 
 class LanguageSettingsController: LocalizedUIViewController {
     
+    @IBOutlet weak var russianButton: UIButton!
+    
+    @IBOutlet weak var englishButton: UIButton!
+    
     @IBAction func setEnglishLanguage(_ sender: UIButton) {
         Localize.setCurrentLanguage("en")
         replaceNavBarButtons()
-        localizeTexts(self.view)
+        russianButton.setTitle("Russian".localized(), for: .normal)
+        englishButton.setTitle("English".localized(), for: .normal)
     }
     
     @IBAction func setRussianLanguage(_ sender: UIButton) {
         Localize.setCurrentLanguage("ru")
         replaceNavBarButtons()
-        localizeTexts(self.view)
+        russianButton.setTitle("Russian".localized(), for: .normal)
+        englishButton.setTitle("English".localized(), for: .normal)
     }
     
     

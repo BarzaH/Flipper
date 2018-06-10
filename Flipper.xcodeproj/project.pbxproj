@@ -8,26 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		092D789220B7491C009EB928 /* FirstSreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092D789120B7491C009EB928 /* FirstSreenController.swift */; };
-		0937A45120B80E4100E78F0B /* FlipperModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45020B80E4100E78F0B /* FlipperModelController.swift */; };
-		0937A45B20B9EB2F00E78F0B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45A20B9EB2F00E78F0B /* SettingsController.swift */; };
+		0937A45120B80E4100E78F0B /* GameModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45020B80E4100E78F0B /* GameModelController.swift */; };
 		0937A45D20B9EE2400E78F0B /* PhotoShootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45C20B9EE2400E78F0B /* PhotoShootViewController.swift */; };
 		0937A45F20B9F45C00E78F0B /* PhotoDownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937A45E20B9F45C00E78F0B /* PhotoDownloadController.swift */; };
 		0943CFD420C0387A00981082 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0943CFD620C0387A00981082 /* Localizable.strings */; };
 		0943CFD920C043AD00981082 /* LanguageSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943CFD820C043AD00981082 /* LanguageSettingsController.swift */; };
-		095C502720C5492100A3D203 /* BackgroundImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C502620C5492100A3D203 /* BackgroundImageDelegate.swift */; };
 		095C502920C5583A00A3D203 /* BackgroundImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C502820C5583A00A3D203 /* BackgroundImageManager.swift */; };
-		0962311F20C4721A0062F32E /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962311E20C4721A0062F32E /* UIButtonExtension.swift */; };
 		098B479420C026B600B7DCA3 /* LocalizedUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B479320C026B600B7DCA3 /* LocalizedUIViewController.swift */; };
 		09A4877D2095C83F003B7A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4877C2095C83F003B7A17 /* AppDelegate.swift */; };
-		09A4877F2095C83F003B7A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4877E2095C83F003B7A17 /* ViewController.swift */; };
+		09A4877F2095C83F003B7A17 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4877E2095C83F003B7A17 /* GameViewController.swift */; };
 		09A487822095C83F003B7A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A487802095C83F003B7A17 /* Main.storyboard */; };
 		09A487842095C841003B7A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A487832095C841003B7A17 /* Assets.xcassets */; };
 		09A487872095C841003B7A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A487852095C841003B7A17 /* LaunchScreen.storyboard */; };
 		09A487922095C841003B7A17 /* FlipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A487912095C841003B7A17 /* FlipperTests.swift */; };
 		09A4879D2095C841003B7A17 /* FlipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4879C2095C841003B7A17 /* FlipperUITests.swift */; };
-		09A487AB2095F4B2003B7A17 /* FlipperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A487AA2095F4B2003B7A17 /* FlipperModel.swift */; };
+		09A487AB2095F4B2003B7A17 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A487AA2095F4B2003B7A17 /* GameModel.swift */; };
 		09A487AD2095F598003B7A17 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A487AC2095F598003B7A17 /* Card.swift */; };
 		09CEA86E20C57DD1008FB746 /* ImageSizePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA86D20C57DD1008FB746 /* ImageSizePopoverViewController.swift */; };
+		122D200A1C340EA1C150FFDD /* libPods-FlipperTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4480ED96868C34844F6EF47 /* libPods-FlipperTests.a */; };
 		8DF022FFF0C440BDA3A1E9D7 /* libPods-Flipper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E291F37E8B84AA2B6A58BAEB /* libPods-Flipper.a */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +48,7 @@
 
 /* Begin PBXFileReference section */
 		092D789120B7491C009EB928 /* FirstSreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSreenController.swift; sourceTree = "<group>"; };
-		0937A45020B80E4100E78F0B /* FlipperModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipperModelController.swift; sourceTree = "<group>"; };
-		0937A45A20B9EB2F00E78F0B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		0937A45020B80E4100E78F0B /* GameModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModelController.swift; sourceTree = "<group>"; };
 		0937A45C20B9EE2400E78F0B /* PhotoShootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShootViewController.swift; sourceTree = "<group>"; };
 		0937A45E20B9F45C00E78F0B /* PhotoDownloadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloadController.swift; sourceTree = "<group>"; };
 		0943CFD020C037D900981082 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
@@ -59,15 +56,13 @@
 		0943CFD520C0387A00981082 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0943CFD720C0387C00981082 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0943CFD820C043AD00981082 /* LanguageSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingsController.swift; sourceTree = "<group>"; };
-		095C502620C5492100A3D203 /* BackgroundImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageDelegate.swift; sourceTree = "<group>"; };
 		095C502820C5583A00A3D203 /* BackgroundImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageManager.swift; sourceTree = "<group>"; };
-		0962311E20C4721A0062F32E /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		098B479320C026B600B7DCA3 /* LocalizedUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedUIViewController.swift; sourceTree = "<group>"; };
 		09A487792095C83F003B7A17 /* Flipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A4877C2095C83F003B7A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09A4877E2095C83F003B7A17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09A4877E2095C83F003B7A17 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		09A487812095C83F003B7A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		09A487832095C841003B7A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Flipper/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		09A487832095C841003B7A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Flipper/Supporting Files/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		09A487862095C841003B7A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09A487882095C841003B7A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A4878D2095C841003B7A17 /* FlipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,11 +71,14 @@
 		09A487982095C841003B7A17 /* FlipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A4879C2095C841003B7A17 /* FlipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipperUITests.swift; sourceTree = "<group>"; };
 		09A4879E2095C841003B7A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09A487AA2095F4B2003B7A17 /* FlipperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipperModel.swift; sourceTree = "<group>"; };
+		09A487AA2095F4B2003B7A17 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		09A487AC2095F598003B7A17 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		09CEA86D20C57DD1008FB746 /* ImageSizePopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizePopoverViewController.swift; sourceTree = "<group>"; };
+		20CDE41906A2C499C2C5967C /* Pods-FlipperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlipperTests/Pods-FlipperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30E0CB1206196928EFB8DB9F /* Pods-Flipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.release.xcconfig"; sourceTree = "<group>"; };
+		DBFFC501781084345E2A9866 /* Pods-FlipperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlipperTests/Pods-FlipperTests.release.xcconfig"; sourceTree = "<group>"; };
 		E291F37E8B84AA2B6A58BAEB /* libPods-Flipper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Flipper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4480ED96868C34844F6EF47 /* libPods-FlipperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71F005044973240FDB3F34A /* Pods-Flipper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122D200A1C340EA1C150FFDD /* libPods-FlipperTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,26 +134,14 @@
 		09A4877B2095C83F003B7A17 /* Flipper */ = {
 			isa = PBXGroup;
 			children = (
-				09A4877C2095C83F003B7A17 /* AppDelegate.swift */,
-				09A4877E2095C83F003B7A17 /* ViewController.swift */,
-				09A487802095C83F003B7A17 /* Main.storyboard */,
-				09A487AA2095F4B2003B7A17 /* FlipperModel.swift */,
-				09A487AC2095F598003B7A17 /* Card.swift */,
-				09A487832095C841003B7A17 /* Assets.xcassets */,
-				09A487852095C841003B7A17 /* LaunchScreen.storyboard */,
+				09B9738920C9BF9900ACC6E2 /* Supporting Files */,
+				09B9738820C9BE8E00ACC6E2 /* Settings */,
+				09B9738720C9BE4C00ACC6E2 /* Game */,
 				09A487882095C841003B7A17 /* Info.plist */,
+				09A487802095C83F003B7A17 /* Main.storyboard */,
+				09A487852095C841003B7A17 /* LaunchScreen.storyboard */,
 				092D789120B7491C009EB928 /* FirstSreenController.swift */,
-				0937A45020B80E4100E78F0B /* FlipperModelController.swift */,
-				0937A45A20B9EB2F00E78F0B /* SettingsController.swift */,
-				0937A45C20B9EE2400E78F0B /* PhotoShootViewController.swift */,
-				0937A45E20B9F45C00E78F0B /* PhotoDownloadController.swift */,
-				098B479320C026B600B7DCA3 /* LocalizedUIViewController.swift */,
-				0943CFD620C0387A00981082 /* Localizable.strings */,
-				0943CFD820C043AD00981082 /* LanguageSettingsController.swift */,
-				0962311E20C4721A0062F32E /* UIButtonExtension.swift */,
-				095C502620C5492100A3D203 /* BackgroundImageDelegate.swift */,
-				095C502820C5583A00A3D203 /* BackgroundImageManager.swift */,
-				09CEA86D20C57DD1008FB746 /* ImageSizePopoverViewController.swift */,
+				09A4877C2095C83F003B7A17 /* AppDelegate.swift */,
 			);
 			path = Flipper;
 			sourceTree = "<group>";
@@ -177,10 +164,44 @@
 			path = FlipperUITests;
 			sourceTree = "<group>";
 		};
+		09B9738720C9BE4C00ACC6E2 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				09A4877E2095C83F003B7A17 /* GameViewController.swift */,
+				09A487AA2095F4B2003B7A17 /* GameModel.swift */,
+				09A487AC2095F598003B7A17 /* Card.swift */,
+				0937A45020B80E4100E78F0B /* GameModelController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		09B9738820C9BE8E00ACC6E2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0937A45C20B9EE2400E78F0B /* PhotoShootViewController.swift */,
+				0937A45E20B9F45C00E78F0B /* PhotoDownloadController.swift */,
+				098B479320C026B600B7DCA3 /* LocalizedUIViewController.swift */,
+				0943CFD820C043AD00981082 /* LanguageSettingsController.swift */,
+				095C502820C5583A00A3D203 /* BackgroundImageManager.swift */,
+				09CEA86D20C57DD1008FB746 /* ImageSizePopoverViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		09B9738920C9BF9900ACC6E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09A487832095C841003B7A17 /* Assets.xcassets */,
+				0943CFD620C0387A00981082 /* Localizable.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C3E7BD8B66C8BC0FE47A44A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E291F37E8B84AA2B6A58BAEB /* libPods-Flipper.a */,
+				E4480ED96868C34844F6EF47 /* libPods-FlipperTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,6 +211,8 @@
 			children = (
 				E71F005044973240FDB3F34A /* Pods-Flipper.debug.xcconfig */,
 				30E0CB1206196928EFB8DB9F /* Pods-Flipper.release.xcconfig */,
+				20CDE41906A2C499C2C5967C /* Pods-FlipperTests.debug.xcconfig */,
+				DBFFC501781084345E2A9866 /* Pods-FlipperTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -219,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09A487A42095C841003B7A17 /* Build configuration list for PBXNativeTarget "FlipperTests" */;
 			buildPhases = (
+				996AD53548215D63F009E1E0 /* [CP] Check Pods Manifest.lock */,
 				09A487892095C841003B7A17 /* Sources */,
 				09A4878A2095C841003B7A17 /* Frameworks */,
 				09A4878B2095C841003B7A17 /* Resources */,
@@ -266,6 +290,7 @@
 					};
 					09A4878C2095C841003B7A17 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 						TestTargetID = 09A487782095C83F003B7A17;
 					};
 					09A487972095C841003B7A17 = {
@@ -324,6 +349,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		996AD53548215D63F009E1E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlipperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9F4A3E9D9D0FCD08593278F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,18 +392,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A4877F2095C83F003B7A17 /* ViewController.swift in Sources */,
+				09A4877F2095C83F003B7A17 /* GameViewController.swift in Sources */,
 				092D789220B7491C009EB928 /* FirstSreenController.swift in Sources */,
-				0937A45120B80E4100E78F0B /* FlipperModelController.swift in Sources */,
+				0937A45120B80E4100E78F0B /* GameModelController.swift in Sources */,
 				0937A45D20B9EE2400E78F0B /* PhotoShootViewController.swift in Sources */,
-				0937A45B20B9EB2F00E78F0B /* SettingsController.swift in Sources */,
-				0962311F20C4721A0062F32E /* UIButtonExtension.swift in Sources */,
 				0943CFD920C043AD00981082 /* LanguageSettingsController.swift in Sources */,
-				095C502720C5492100A3D203 /* BackgroundImageDelegate.swift in Sources */,
 				09CEA86E20C57DD1008FB746 /* ImageSizePopoverViewController.swift in Sources */,
 				098B479420C026B600B7DCA3 /* LocalizedUIViewController.swift in Sources */,
 				09A487AD2095F598003B7A17 /* Card.swift in Sources */,
-				09A487AB2095F4B2003B7A17 /* FlipperModel.swift in Sources */,
+				09A487AB2095F4B2003B7A17 /* GameModel.swift in Sources */,
 				095C502920C5583A00A3D203 /* BackgroundImageManager.swift in Sources */,
 				09A4877D2095C83F003B7A17 /* AppDelegate.swift in Sources */,
 				0937A45F20B9F45C00E78F0B /* PhotoDownloadController.swift in Sources */,
@@ -585,9 +625,11 @@
 		};
 		09A487A52095C841003B7A17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CDE41906A2C499C2C5967C /* Pods-FlipperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlipperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -597,6 +639,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = InnoUniv.FlipperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FlipperTests/FlipperTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flipper.app/Flipper";
@@ -605,9 +649,11 @@
 		};
 		09A487A62095C841003B7A17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFFC501781084345E2A9866 /* Pods-FlipperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlipperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -617,6 +663,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = InnoUniv.FlipperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FlipperTests/FlipperTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flipper.app/Flipper";

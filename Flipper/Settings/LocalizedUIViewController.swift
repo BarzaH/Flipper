@@ -16,7 +16,6 @@ class LocalizedUIViewController: UIViewController{
         
         let button = UIBarButtonItem()
         button.title = "Back".localized()
-       
         self.navigationItem.backBarButtonItem = button
         
         localizeTexts(self.view)
@@ -38,8 +37,7 @@ class LocalizedUIViewController: UIViewController{
             default:
                 localizeTexts(view)
             }
-            
-            
+        
         }
     }
     
@@ -47,10 +45,11 @@ class LocalizedUIViewController: UIViewController{
         let button = UIBarButtonItem()
         button.title = "Back".localized()
        
-        for vc in self.navigationController!.viewControllers{
+        if let vcs = self.navigationController?.viewControllers{
+        for vc in vcs{
             vc.navigationItem.backBarButtonItem = button
         }
-        
+        }
         
     }
 }

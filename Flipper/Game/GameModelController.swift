@@ -8,16 +8,16 @@
 
 import Foundation
 
-class FlipperModelController{
+class GameModelController{
 
-    private var flipperModel: FlipperModel
+    private var gameModel: GameModel
     
     var signs = ["🧠", "🎃", "👹", "👿", "🧕🏻", "👨‍👩‍👦‍👦", "🧠", "🎃", "👹", "👿", "🧕🏻", "👨‍👩‍👦‍👦"]
     var signMap = [Int: String]()
     var cardButtonMap = [Int]()
     var cardsLeft:Int{
         get{
-            return flipperModel.Cards.filter({ (c) -> Bool in
+            return gameModel.Cards.filter({ (c) -> Bool in
                 !c.isOut
             }).count
         }
@@ -27,32 +27,32 @@ class FlipperModelController{
     
     var cards:[Card] {
         get{
-            return flipperModel.Cards
+            return gameModel.Cards
         }
     }
     
     var flips:Int {
         get{
-            return flipperModel.flips
+            return gameModel.flips
         }
         set{
-            flipperModel.flips = newValue
+            gameModel.flips = newValue
         }
     }
     
     var cardsCount:Int {
         get{
-            return flipperModel.Cards.count
+            return gameModel.Cards.count
         }
     }
     
     
     init(amountOfCards: Int){
-        flipperModel = FlipperModel(amountOfCards: amountOfCards)
+        gameModel = GameModel(amountOfCards: amountOfCards)
     }
     
     func chooseCard(index: Int){
-        guard flipperModel.Cards[index].isOut == false && flipperModel.Cards[index].isClicked == false  else{
+        guard gameModel.Cards[index].isOut == false && gameModel.Cards[index].isClicked == false  else{
             return
         }
         
@@ -60,25 +60,25 @@ class FlipperModelController{
         if firstChosenCardIndex != nil
         {
             
-            if signMap[flipperModel.Cards[index].id] == signMap[flipperModel.Cards[firstChosenCardIndex!].id]
+            if signMap[gameModel.Cards[index].id] == signMap[gameModel.Cards[firstChosenCardIndex!].id]
             {
-                flipperModel.Cards[index].isOut = true
-                flipperModel.Cards[firstChosenCardIndex!].isOut = true
+                gameModel.Cards[index].isOut = true
+                gameModel.Cards[firstChosenCardIndex!].isOut = true
             }
             
-            flipperModel.Cards[index].isClicked = true
+            gameModel.Cards[index].isClicked = true
             
             firstChosenCardIndex = nil
         }
         else
         {
-            for ind in flipperModel.Cards.indices
+            for ind in gameModel.Cards.indices
             {
-                flipperModel.Cards[ind].isClicked = false
+                gameModel.Cards[ind].isClicked = false
             }
             
             firstChosenCardIndex = index
-            flipperModel.Cards[index].isClicked = true
+            gameModel.Cards[index].isClicked = true
             
         }
     }
@@ -86,7 +86,7 @@ class FlipperModelController{
     func matchCardsAndButtons(indices: CountableRange<Int>){
         var unusedButtonsIndices = Array(indices)
         
-        for _ in flipperModel.Cards.indices
+        for _ in gameModel.Cards.indices
         {
             let rndm = Int(arc4random_uniform(UInt32(unusedButtonsIndices.count)))
             cardButtonMap.append(unusedButtonsIndices[rndm])
@@ -95,7 +95,7 @@ class FlipperModelController{
     }
     
     func getCard(index:Int) -> Card{
-        return flipperModel.Cards[index]
+        return gameModel.Cards[index]
     }
     
 }

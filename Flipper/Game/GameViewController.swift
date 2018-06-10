@@ -9,9 +9,9 @@
 import UIKit
 import Localize_Swift
 
-class ViewController: LocalizedUIViewController {
+class GameViewController: LocalizedUIViewController {
 
-    lazy var game = FlipperModelController(amountOfCards: cardButtons.count)
+    lazy var game = GameModelController(amountOfCards: cardButtons.count)
 
     var backgroundImage: UIImage?
     
@@ -35,7 +35,7 @@ class ViewController: LocalizedUIViewController {
     
     func updateView(){
         
-        flipsLabel.text = "Flips Count:".localized() + "\(game.flips)"
+        flipsLabel.text = "Flips Count:".localized() + " \(game.flips)"
         
         for index in game.cards.indices
         {

@@ -19,7 +19,7 @@ class ImageSizePopoverViewController: LocalizedUIViewController{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.sizeLabel.text = "Your image size is:".localized()
+//        self.sizeLabel.text = "Your image size is:".localized()
         self.sizeNumber.text = "\(sizeOfImage!/1024)"
     }
 }

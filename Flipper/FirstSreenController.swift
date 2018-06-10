@@ -12,8 +12,8 @@ import UIKit
 
 class FirstScreenController: LocalizedUIViewController {
 
-    var game: FlipperModelController?
-    var vcPointer: ViewController?
+    var game: GameModelController?
+    var vcPointer: GameViewController?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,12 +23,12 @@ class FirstScreenController: LocalizedUIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "Continue Old Game", let vc = vcPointer {
-            if let newVC = segue.destination as? ViewController{
+            if let newVC = segue.destination as? GameViewController{
                 newVC.game = vc.game
             }
         }
         else if segue.identifier == "Start New Game"{
-            vcPointer = segue.destination as? ViewController
+            vcPointer = segue.destination as? GameViewController
         }
         
         
