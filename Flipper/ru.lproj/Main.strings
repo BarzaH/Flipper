@@ -1,0 +1,48 @@
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "1Tv-8T-0Dc"; */
+"1Tv-8T-0Dc.normalTitle" = "English";
+
+/* Class = "UIViewController"; title = "Image Downloader"; ObjectID = "3aS-Wh-94d"; */
+"3aS-Wh-94d.title" = "Image Downloader";
+
+/* Class = "UILabel"; text = "Flips Count: 0"; ObjectID = "FGR-Ud-lYq"; */
+"FGR-Ud-lYq.text" = "Flips Count: 0";
+
+/* Class = "UIButton"; normalTitle = "Choose Language"; ObjectID = "J2e-Nh-Ngg"; */
+"J2e-Nh-Ngg.normalTitle" = "Choose Language";
+
+/* Class = "UIButton"; normalTitle = "Choose background imge"; ObjectID = "L89-xB-wj8"; */
+"L89-xB-wj8.normalTitle" = "Choose background imge";
+
+/* Class = "UIButton"; normalTitle = "Download photo from internet"; ObjectID = "Tnj-ju-q6N"; */
+"Tnj-ju-q6N.normalTitle" = "Download photo from internet";
+
+/* Class = "UILabel"; text = "Paste Your URL"; ObjectID = "Z1r-7w-BgL"; */
+"Z1r-7w-BgL.text" = "Paste Your URL";
+
+/* Class = "UIButton"; normalTitle = "New Game"; ObjectID = "cQy-n6-hcC"; */
+"cQy-n6-hcC.normalTitle" = "New Game";
+
+/* Class = "UIButton"; normalTitle = "Russian"; ObjectID = "cdU-D6-BcX"; */
+"cdU-D6-BcX.normalTitle" = "Russian";
+
+/* Class = "UIButton"; normalTitle = "Continue Old Game"; ObjectID = "dCl-Ul-Df9"; */
+"dCl-Ul-Df9.normalTitle" = "Continue Old Game";
+
+/* Class = "UITextField"; text = "https://www.collabary.com/wp-content/uploads/2017/06/Break-The-Instagram-%E2%80%93-How-To-Capture-And-Create-The-Perfect-Influencer-Photo.jpg"; ObjectID = "dUC-Mo-JZj"; */
+"dUC-Mo-JZj.text" = "https://www.collabary.com/wp-content/uploads/2017/06/Break-The-Instagram-%E2%80%93-How-To-Capture-And-Create-The-Perfect-Influencer-Photo.jpg";
+
+/* Class = "UIButton"; normalTitle = "Take Photo"; ObjectID = "hey-De-Fo8"; */
+"hey-De-Fo8.normalTitle" = "Take Photo";
+
+/* Class = "UIButton"; normalTitle = "Download"; ObjectID = "lhO-VS-AFH"; */
+"lhO-VS-AFH.normalTitle" = "Download";
+
+/* Class = "UIViewController"; title = "Photographer"; ObjectID = "y4d-id-zuq"; */
+"y4d-id-zuq.title" = "Photographer";
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "yQn-sW-TMB"; */
+"yQn-sW-TMB.normalTitle" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Take a photo for back view"; ObjectID = "zyi-5y-p2m"; */
+"zyi-5y-p2m.normalTitle" = "Take a photo for back view";

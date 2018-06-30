@@ -10,21 +10,27 @@ import Foundation
 
 import UIKit
 
-class FirstScreenController: UIViewController {
+class FirstScreenController: LocalizedUIViewController {
 
-    var game: FlipperModelController?
-    var vcPointer: ViewController?
+    var game: GameModelController?
+    var vcPointer: GameViewController?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        replaceNavBarButtons()
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "Continue Old Game", let vc = vcPointer {
-            if let newVC = segue.destination as? ViewController{
+            if let newVC = segue.destination as? GameViewController{
                 newVC.game = vc.game
             }
         }
-        else{
-            vcPointer = segue.destination as? ViewController
+        else if segue.identifier == "Start New Game"{
+            vcPointer = segue.destination as? GameViewController
         }
+        
         
     }
 }

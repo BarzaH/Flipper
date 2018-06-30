@@ -1,0 +1,6 @@
+module Pods_Flipper {
+  umbrella header "Pods-Flipper-umbrella.h"
+
+  export *
+  module * { export * }
+}

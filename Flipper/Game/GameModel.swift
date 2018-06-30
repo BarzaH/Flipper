@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FlipperModel
+struct GameModel
 {
     var Cards:[Card] = []
     var flips: Int = 0

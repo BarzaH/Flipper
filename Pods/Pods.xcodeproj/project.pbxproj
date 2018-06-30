@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CD2203376CE334B0CBCB14139EF68F9 /* Pods-FlipperTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 294993EC5A493003618AD8170145C332 /* Pods-FlipperTests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C28C8A124ADA817DCDF5678AD637756 /* Pods-FlipperTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A001C309DE8FADC62635864DEE677F /* Pods-FlipperTests-dummy.m */; };
+		4233795581B170C68D2D90D4F7CF35E0 /* String+LocalizedBundleTableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD7C57F7C231B33003CF8D342FFCB /* String+LocalizedBundleTableName.swift */; };
+		4332CFD5997392AD6FE18B0FD68AF43D /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B90CF3CC8B44DC37EA2371DB172ADAC /* Localize.swift */; };
+		6B662993D905EA3F153FDE20600E2C20 /* Localize_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 815A777ABE7089DC68CC5232D153E34F /* Localize_Swift.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7528DED985A6BDFD342B822F60917BF2 /* Localize-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E03B116AEED6EC299058ECBC44CC66F /* Localize-Swift-dummy.m */; };
+		96589150371B85C0E000AD40E6082A07 /* String+LocalizeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA53E371047B6965F6E562DFA675C6E /* String+LocalizeBundle.swift */; };
+		D6582FAE927470521148E9FC4756306E /* String+LocalizeTableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0D485D6D3AE79571E18A9973E6FCA /* String+LocalizeTableName.swift */; };
+		D7015716E1228C9DE23F41600D00708B /* Pods-Flipper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CA27BC4B915C204DEDBB7F0529C06E /* Pods-Flipper-dummy.m */; };
+		D87D1CC1F9E6D873E9EDFDE0DA9BCFBE /* Pods-Flipper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 036131BAE7078E6469470A50CE7C9C16 /* Pods-Flipper-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EBB72F0FFBCC2DE659A5EFEF0AB5965F /* Localize-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 526605BAC1E8F6EA12EA657EC31B34ED /* Localize-Swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29CD6D6CA8FB9AA7F0F0E8F3EEFA324B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033E8FD375D644360C93471E526BECF7;
+			remoteInfo = "Localize-Swift";
+		};
+		7329EDA9899328E7532650C9F55D6065 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033E8FD375D644360C93471E526BECF7;
+			remoteInfo = "Localize-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036131BAE7078E6469470A50CE7C9C16 /* Pods-Flipper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Flipper-umbrella.h"; sourceTree = "<group>"; };
+		061F2431F52DDBA5601DBE7498E7214F /* Pods-Flipper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Flipper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		077C3A48385F95FF7AF2417C1D9B8FCC /* Localize-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Localize-Swift.xcconfig"; sourceTree = "<group>"; };
+		1F348D028112EAEDA7CC1FD01A206A52 /* Pods-FlipperTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlipperTests-frameworks.sh"; sourceTree = "<group>"; };
+		26E51EB35E838992378D06290CC48D2B /* libPods-FlipperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FlipperTests.a"; path = "libPods-FlipperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28846A239CC8BBB67D92B68DE5776358 /* Pods-FlipperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlipperTests.release.xcconfig"; sourceTree = "<group>"; };
+		294993EC5A493003618AD8170145C332 /* Pods-FlipperTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlipperTests-umbrella.h"; sourceTree = "<group>"; };
+		2DA53E371047B6965F6E562DFA675C6E /* String+LocalizeBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizeBundle.swift"; path = "Sources/String+LocalizeBundle.swift"; sourceTree = "<group>"; };
+		357BEBCD07AA32E7C4B29245766C0C17 /* libLocalize-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libLocalize-Swift.a"; path = "libLocalize-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		384A694BA2CDAAFD53AE057DC3471ADC /* Pods-Flipper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Flipper-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B90CF3CC8B44DC37EA2371DB172ADAC /* Localize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localize.swift; path = Sources/Localize.swift; sourceTree = "<group>"; };
+		526605BAC1E8F6EA12EA657EC31B34ED /* Localize-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Localize-Swift-umbrella.h"; path = "../../Headers/Public/Localize_Swift/Localize-Swift-umbrella.h"; sourceTree = "<group>"; };
+		5B2773C3CAB6788028BD0C327FD7D39D /* libPods-Flipper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Flipper.a"; path = "libPods-Flipper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6395FFC5AA37DDDAC5D5CF4285D38FBB /* Pods-FlipperTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlipperTests.modulemap"; sourceTree = "<group>"; };
+		6D83B23F681A9D3E4AF5F03A2D9FBA3F /* Pods-Flipper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Flipper-frameworks.sh"; sourceTree = "<group>"; };
+		6DD0D485D6D3AE79571E18A9973E6FCA /* String+LocalizeTableName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizeTableName.swift"; path = "Sources/String+LocalizeTableName.swift"; sourceTree = "<group>"; };
+		7E03B116AEED6EC299058ECBC44CC66F /* Localize-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Localize-Swift-dummy.m"; sourceTree = "<group>"; };
+		815A777ABE7089DC68CC5232D153E34F /* Localize_Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Localize_Swift.h; path = Sources/Localize_Swift.h; sourceTree = "<group>"; };
+		81A001C309DE8FADC62635864DEE677F /* Pods-FlipperTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlipperTests-dummy.m"; sourceTree = "<group>"; };
+		86C01E40B4D37D1D18C381AF0BFDDDB6 /* Localize-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Localize-Swift-prefix.pch"; sourceTree = "<group>"; };
+		8943DF9D18C0C0CF235EF9CF9C1D057A /* Pods-Flipper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Flipper.modulemap"; sourceTree = "<group>"; };
+		8F2934F7A3CAB140740FA3186E5C8FD3 /* Pods-Flipper-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Flipper-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF7DE676F10B6F2944270D3072530C24 /* Pods-FlipperTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlipperTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B9C2ED8AB3BE50A8BE875338D7DF4309 /* Pods-FlipperTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlipperTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7ECEAC7BB6A75084640B959160473BF /* Localize-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Localize-Swift.modulemap"; path = "../../Headers/Public/Localize_Swift/Localize-Swift.modulemap"; sourceTree = "<group>"; };
+		CC000CA094F0C5DAE70C4DC020BF0393 /* Pods-FlipperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlipperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3CA27BC4B915C204DEDBB7F0529C06E /* Pods-Flipper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Flipper-dummy.m"; sourceTree = "<group>"; };
+		DBC70DB6F4C9E8D1BF118124ADFEB8CE /* Pods-Flipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Flipper.release.xcconfig"; sourceTree = "<group>"; };
+		E6A45F705BF0CE55AC23C2435C16CFBC /* Pods-Flipper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Flipper.debug.xcconfig"; sourceTree = "<group>"; };
+		EE3CD7C57F7C231B33003CF8D342FFCB /* String+LocalizedBundleTableName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizedBundleTableName.swift"; path = "Sources/String+LocalizedBundleTableName.swift"; sourceTree = "<group>"; };
+		F4FF928A7AD02C26ADF11BE4F85B4FF7 /* Pods-FlipperTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlipperTests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5186B263DE2506BD7ED7E78B4A29532D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A353C7B740448FD49067117479EDD9A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02CE32081D40DECF3EE1744058952B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0150034DE56AFF662ED6DE982BFC60C8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F27DF6F3A783A41CC68827CC60B622CC /* Pods-Flipper */,
+				AF3442A80D026F822311A596D4D93B26 /* Pods-FlipperTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0C6531576CC7CA7CDB39DE4A8B882BDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0790BC52891126C1BEE41B4D75993C1 /* Localize-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				0C6531576CC7CA7CDB39DE4A8B882BDC /* Pods */,
+				AD0603F21CF54D834FEDCFDB513FF5F7 /* Products */,
+				0150034DE56AFF662ED6DE982BFC60C8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		860D80BEB0D0AB8639661F32D82F8A23 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7ECEAC7BB6A75084640B959160473BF /* Localize-Swift.modulemap */,
+				077C3A48385F95FF7AF2417C1D9B8FCC /* Localize-Swift.xcconfig */,
+				7E03B116AEED6EC299058ECBC44CC66F /* Localize-Swift-dummy.m */,
+				86C01E40B4D37D1D18C381AF0BFDDDB6 /* Localize-Swift-prefix.pch */,
+				526605BAC1E8F6EA12EA657EC31B34ED /* Localize-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Localize-Swift";
+			sourceTree = "<group>";
+		};
+		AD0603F21CF54D834FEDCFDB513FF5F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357BEBCD07AA32E7C4B29245766C0C17 /* libLocalize-Swift.a */,
+				5B2773C3CAB6788028BD0C327FD7D39D /* libPods-Flipper.a */,
+				26E51EB35E838992378D06290CC48D2B /* libPods-FlipperTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF3442A80D026F822311A596D4D93B26 /* Pods-FlipperTests */ = {
+			isa = PBXGroup;
+			children = (
+				6395FFC5AA37DDDAC5D5CF4285D38FBB /* Pods-FlipperTests.modulemap */,
+				B9C2ED8AB3BE50A8BE875338D7DF4309 /* Pods-FlipperTests-acknowledgements.markdown */,
+				AF7DE676F10B6F2944270D3072530C24 /* Pods-FlipperTests-acknowledgements.plist */,
+				81A001C309DE8FADC62635864DEE677F /* Pods-FlipperTests-dummy.m */,
+				1F348D028112EAEDA7CC1FD01A206A52 /* Pods-FlipperTests-frameworks.sh */,
+				F4FF928A7AD02C26ADF11BE4F85B4FF7 /* Pods-FlipperTests-resources.sh */,
+				294993EC5A493003618AD8170145C332 /* Pods-FlipperTests-umbrella.h */,
+				CC000CA094F0C5DAE70C4DC020BF0393 /* Pods-FlipperTests.debug.xcconfig */,
+				28846A239CC8BBB67D92B68DE5776358 /* Pods-FlipperTests.release.xcconfig */,
+			);
+			name = "Pods-FlipperTests";
+			path = "Target Support Files/Pods-FlipperTests";
+			sourceTree = "<group>";
+		};
+		B0790BC52891126C1BEE41B4D75993C1 /* Localize-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3B90CF3CC8B44DC37EA2371DB172ADAC /* Localize.swift */,
+				815A777ABE7089DC68CC5232D153E34F /* Localize_Swift.h */,
+				2DA53E371047B6965F6E562DFA675C6E /* String+LocalizeBundle.swift */,
+				EE3CD7C57F7C231B33003CF8D342FFCB /* String+LocalizedBundleTableName.swift */,
+				6DD0D485D6D3AE79571E18A9973E6FCA /* String+LocalizeTableName.swift */,
+				860D80BEB0D0AB8639661F32D82F8A23 /* Support Files */,
+			);
+			name = "Localize-Swift";
+			path = "Localize-Swift";
+			sourceTree = "<group>";
+		};
+		F27DF6F3A783A41CC68827CC60B622CC /* Pods-Flipper */ = {
+			isa = PBXGroup;
+			children = (
+				8943DF9D18C0C0CF235EF9CF9C1D057A /* Pods-Flipper.modulemap */,
+				061F2431F52DDBA5601DBE7498E7214F /* Pods-Flipper-acknowledgements.markdown */,
+				384A694BA2CDAAFD53AE057DC3471ADC /* Pods-Flipper-acknowledgements.plist */,
+				D3CA27BC4B915C204DEDBB7F0529C06E /* Pods-Flipper-dummy.m */,
+				6D83B23F681A9D3E4AF5F03A2D9FBA3F /* Pods-Flipper-frameworks.sh */,
+				8F2934F7A3CAB140740FA3186E5C8FD3 /* Pods-Flipper-resources.sh */,
+				036131BAE7078E6469470A50CE7C9C16 /* Pods-Flipper-umbrella.h */,
+				E6A45F705BF0CE55AC23C2435C16CFBC /* Pods-Flipper.debug.xcconfig */,
+				DBC70DB6F4C9E8D1BF118124ADFEB8CE /* Pods-Flipper.release.xcconfig */,
+			);
+			name = "Pods-Flipper";
+			path = "Target Support Files/Pods-Flipper";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5F944B03D72DC805B68F2E11B1C5CB43 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87D1CC1F9E6D873E9EDFDE0DA9BCFBE /* Pods-Flipper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB98116F9347A1E88D30A3DF73458FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD2203376CE334B0CBCB14139EF68F9 /* Pods-FlipperTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C2D325F0930CE20BFB651997597CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB72F0FFBCC2DE659A5EFEF0AB5965F /* Localize-Swift-umbrella.h in Headers */,
+				6B662993D905EA3F153FDE20600E2C20 /* Localize_Swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		033E8FD375D644360C93471E526BECF7 /* Localize-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280864B4488F2C48702208CA5EA3D19D /* Build configuration list for PBXNativeTarget "Localize-Swift" */;
+			buildPhases = (
+				290180F98B6756ADFCE2CB0E1F84EFED /* Sources */,
+				C02CE32081D40DECF3EE1744058952B3 /* Frameworks */,
+				DD5C2D325F0930CE20BFB651997597CA /* Headers */,
+				1421B986CE3E9E3E1E3AA2F85C0F61B4 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Localize-Swift";
+			productName = "Localize-Swift";
+			productReference = 357BEBCD07AA32E7C4B29245766C0C17 /* libLocalize-Swift.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		53B9FF78A22C261FD0BE2A39DCBAB569 /* Pods-FlipperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25AAF34ADE37AB01B04BEA05093C8222 /* Build configuration list for PBXNativeTarget "Pods-FlipperTests" */;
+			buildPhases = (
+				789BC41EFF28CA566411FD437455E8E3 /* Sources */,
+				5186B263DE2506BD7ED7E78B4A29532D /* Frameworks */,
+				8AB98116F9347A1E88D30A3DF73458FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8419BF365E229682CE05EAB52D559B7F /* PBXTargetDependency */,
+			);
+			name = "Pods-FlipperTests";
+			productName = "Pods-FlipperTests";
+			productReference = 26E51EB35E838992378D06290CC48D2B /* libPods-FlipperTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D77B69F86A946E678CF86144F9939B77 /* Pods-Flipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D55CC70D8F9A3829E6D2579D57697F /* Build configuration list for PBXNativeTarget "Pods-Flipper" */;
+			buildPhases = (
+				E58E1E9447A602B28488EA30C9928908 /* Sources */,
+				A353C7B740448FD49067117479EDD9A6 /* Frameworks */,
+				5F944B03D72DC805B68F2E11B1C5CB43 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B93CD70EC71BD758CFD7D3F0BD100960 /* PBXTargetDependency */,
+			);
+			name = "Pods-Flipper";
+			productName = "Pods-Flipper";
+			productReference = 5B2773C3CAB6788028BD0C327FD7D39D /* libPods-Flipper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AD0603F21CF54D834FEDCFDB513FF5F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033E8FD375D644360C93471E526BECF7 /* Localize-Swift */,
+				D77B69F86A946E678CF86144F9939B77 /* Pods-Flipper */,
+				53B9FF78A22C261FD0BE2A39DCBAB569 /* Pods-FlipperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1421B986CE3E9E3E1E3AA2F85C0F61B4 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Localize_Swift/Localize-Swift.modulemap",
+				"${PODS_ROOT}/Headers/Public/Localize_Swift/Localize-Swift-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Localize_Swift/Localize-Swift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Localize_Swift/Localize-Swift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		290180F98B6756ADFCE2CB0E1F84EFED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7528DED985A6BDFD342B822F60917BF2 /* Localize-Swift-dummy.m in Sources */,
+				4332CFD5997392AD6FE18B0FD68AF43D /* Localize.swift in Sources */,
+				96589150371B85C0E000AD40E6082A07 /* String+LocalizeBundle.swift in Sources */,
+				4233795581B170C68D2D90D4F7CF35E0 /* String+LocalizedBundleTableName.swift in Sources */,
+				D6582FAE927470521148E9FC4756306E /* String+LocalizeTableName.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789BC41EFF28CA566411FD437455E8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C28C8A124ADA817DCDF5678AD637756 /* Pods-FlipperTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58E1E9447A602B28488EA30C9928908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7015716E1228C9DE23F41600D00708B /* Pods-Flipper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8419BF365E229682CE05EAB52D559B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Localize-Swift";
+			target = 033E8FD375D644360C93471E526BECF7 /* Localize-Swift */;
+			targetProxy = 29CD6D6CA8FB9AA7F0F0E8F3EEFA324B /* PBXContainerItemProxy */;
+		};
+		B93CD70EC71BD758CFD7D3F0BD100960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Localize-Swift";
+			target = 033E8FD375D644360C93471E526BECF7 /* Localize-Swift */;
+			targetProxy = 7329EDA9899328E7532650C9F55D6065 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4F2910260602AFC4832712EA4C730390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077C3A48385F95FF7AF2417C1D9B8FCC /* Localize-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Localize-Swift/Localize-Swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = "Headers/Public/Localize_Swift/Localize-Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Localize_Swift;
+				PRODUCT_NAME = "Localize-Swift";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A28DC6E7D463332AF97075B81F58BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A45F705BF0CE55AC23C2435C16CFBC /* Pods-Flipper.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Flipper/Pods-Flipper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7989849742D3F1F342E1AB8EB768C33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28846A239CC8BBB67D92B68DE5776358 /* Pods-FlipperTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlipperTests/Pods-FlipperTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9237E25E123520CF92ABCA49C37D3014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077C3A48385F95FF7AF2417C1D9B8FCC /* Localize-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Localize-Swift/Localize-Swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = "Headers/Public/Localize_Swift/Localize-Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Localize_Swift;
+				PRODUCT_NAME = "Localize-Swift";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA65904C07D967BC54A9743135E8EC7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC000CA094F0C5DAE70C4DC020BF0393 /* Pods-FlipperTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlipperTests/Pods-FlipperTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F86FAC0DDDBE48C8EDD4D4F0FE279AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC70DB6F4C9E8D1BF118124ADFEB8CE /* Pods-Flipper.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Flipper/Pods-Flipper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11D55CC70D8F9A3829E6D2579D57697F /* Build configuration list for PBXNativeTarget "Pods-Flipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A28DC6E7D463332AF97075B81F58BFA /* Debug */,
+				F86FAC0DDDBE48C8EDD4D4F0FE279AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25AAF34ADE37AB01B04BEA05093C8222 /* Build configuration list for PBXNativeTarget "Pods-FlipperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA65904C07D967BC54A9743135E8EC7D /* Debug */,
+				7989849742D3F1F342E1AB8EB768C33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		280864B4488F2C48702208CA5EA3D19D /* Build configuration list for PBXNativeTarget "Localize-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F2910260602AFC4832712EA4C730390 /* Debug */,
+				9237E25E123520CF92ABCA49C37D3014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
