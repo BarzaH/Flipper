@@ -25,6 +25,7 @@
 		09A487AB2095F4B2003B7A17 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A487AA2095F4B2003B7A17 /* GameModel.swift */; };
 		09A487AD2095F598003B7A17 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A487AC2095F598003B7A17 /* Card.swift */; };
 		09CEA86E20C57DD1008FB746 /* ImageSizePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA86D20C57DD1008FB746 /* ImageSizePopoverViewController.swift */; };
+		09F2745220EFA5E3006636A0 /* UIGameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F2745120EFA5E3006636A0 /* UIGameCardView.swift */; };
 		122D200A1C340EA1C150FFDD /* libPods-FlipperTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4480ED96868C34844F6EF47 /* libPods-FlipperTests.a */; };
 		8DF022FFF0C440BDA3A1E9D7 /* libPods-Flipper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E291F37E8B84AA2B6A58BAEB /* libPods-Flipper.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		09A487AA2095F4B2003B7A17 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		09A487AC2095F598003B7A17 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		09CEA86D20C57DD1008FB746 /* ImageSizePopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizePopoverViewController.swift; sourceTree = "<group>"; };
+		09F2745120EFA5E3006636A0 /* UIGameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGameCardView.swift; sourceTree = "<group>"; };
 		20CDE41906A2C499C2C5967C /* Pods-FlipperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlipperTests/Pods-FlipperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30E0CB1206196928EFB8DB9F /* Pods-Flipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flipper/Pods-Flipper.release.xcconfig"; sourceTree = "<group>"; };
 		DBFFC501781084345E2A9866 /* Pods-FlipperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlipperTests/Pods-FlipperTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				09A487AA2095F4B2003B7A17 /* GameModel.swift */,
 				09A487AC2095F598003B7A17 /* Card.swift */,
 				0937A45020B80E4100E78F0B /* GameModelController.swift */,
+				09F2745120EFA5E3006636A0 /* UIGameCardView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				09A4877F2095C83F003B7A17 /* GameViewController.swift in Sources */,
 				092D789220B7491C009EB928 /* FirstSreenController.swift in Sources */,
 				0937A45120B80E4100E78F0B /* GameModelController.swift in Sources */,
+				09F2745220EFA5E3006636A0 /* UIGameCardView.swift in Sources */,
 				0937A45D20B9EE2400E78F0B /* PhotoShootViewController.swift in Sources */,
 				0943CFD920C043AD00981082 /* LanguageSettingsController.swift in Sources */,
 				09CEA86E20C57DD1008FB746 /* ImageSizePopoverViewController.swift in Sources */,

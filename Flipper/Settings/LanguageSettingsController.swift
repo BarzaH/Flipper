@@ -10,6 +10,20 @@ import Foundation
 import UIKit
 import Localize_Swift
 
+extension UINavigationController{
+//    func pushViewController(viewController: UIViewController, animated: Bool){
+//        self.pushViewController(viewController: viewController, animated: animated)
+//
+//        print("Pushed")
+//    }
+//
+//    func popViewController(animated: Bool){
+//        self.popViewController(animated: animated)
+//
+//        print("Popped")
+//    }
+}
+
 class LanguageSettingsController: LocalizedUIViewController {
     
     @IBOutlet weak var russianButton: UIButton!
@@ -21,6 +35,10 @@ class LanguageSettingsController: LocalizedUIViewController {
         replaceNavBarButtons()
         russianButton.setTitle("Russian".localized(), for: .normal)
         englishButton.setTitle("English".localized(), for: .normal)
+        
+        navigationController?.popToRootViewController(animated: false)
+        
+        
     }
     
     @IBAction func setRussianLanguage(_ sender: UIButton) {
