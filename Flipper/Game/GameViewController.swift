@@ -9,7 +9,7 @@
 import UIKit
 import Localize_Swift
 
-class GameViewController: LocalizedUIViewController {
+class GameViewController: LocalizableUIViewController {
 
     lazy var game = GameModelController(amountOfCards: cardButtons.count)
 

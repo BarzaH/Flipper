@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ImageSizePopoverViewController: LocalizedUIViewController{
+class ImageSizePopoverViewController: LocalizableUIViewController{
     
     var sizeOfImage: Int?
     
@@ -17,9 +17,9 @@ class ImageSizePopoverViewController: LocalizedUIViewController{
     
     @IBOutlet weak var sizeNumber: UILabel!
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        self.sizeLabel.text = "Your image size is:".localized()
         self.sizeNumber.text = "\(sizeOfImage!/1024)"
     }
 }

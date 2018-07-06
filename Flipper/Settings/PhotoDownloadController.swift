@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoDownloadController: LocalizedUIViewController, UIPopoverPresentationControllerDelegate {
+class PhotoDownloadController: LocalizableUIViewController, UIPopoverPresentationControllerDelegate {
 
     @IBOutlet weak var urlLabel: UILabel!
     
@@ -51,12 +51,12 @@ class PhotoDownloadController: LocalizedUIViewController, UIPopoverPresentationC
                 pvc.permittedArrowDirections = UIPopoverArrowDirection.any
                 pvc.delegate = self
                 vc.sizeOfImage = UIImagePNGRepresentation(self.imageView.image!)?.count
+//                vc.sizeNumber.text = "\(sizeOfImage!/1024)"
             }
         }
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
-        // return UIModalPresentationStyle.FullScreen
         return UIModalPresentationStyle.none
     }
     
@@ -64,6 +64,8 @@ class PhotoDownloadController: LocalizedUIViewController, UIPopoverPresentationC
         super.viewWillAppear(animated)
         self.sizeButton.title = "Show size".localized()
         self.saveButton.title = "Save".localized()
+        
+        
     }
     
 }
