@@ -8,24 +8,12 @@
 
 import UIKit
 
-class PhotoShootViewController:  LocalizedUIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class PhotoShootViewController:  LocalizableUIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     @IBOutlet weak var takePhotoButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
     var imagePicker: UIImagePickerController!
     
     
@@ -55,7 +43,6 @@ class PhotoShootViewController:  LocalizedUIViewController, UINavigationControll
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.saveButton.title = "Save".localized()
-//    self.takePhotoButton.setTitle("Take Photo".localized(), for: .normal)
     }
 
 }

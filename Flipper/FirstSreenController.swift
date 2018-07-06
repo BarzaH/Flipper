@@ -10,7 +10,7 @@ import Foundation
 
 import UIKit
 
-class FirstScreenController: LocalizedUIViewController {
+class FirstScreenController: LocalizableUIViewController {
 
     var game: GameModelController?
     var vcPointer: GameViewController?

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Localize_Swift
 
-class LocalizedUIViewController: UIViewController{
+class LocalizableUIViewController: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -28,17 +28,19 @@ class LocalizedUIViewController: UIViewController{
             
             switch(view)
             {
-            case is UITextField:
-                (view as! UITextField).text = (view as! UITextField).text?.localized()
+//            case is UITextField:
+//                (view as! UITextField).text = view.baseText.localized()
             case is UIButton:
-                (view as! UIButton).setTitle((view as! UIButton).currentTitle?.localized(), for: .normal)
+                (view as! UIButton).setTitle(view.baseText.localized(), for: .normal)
             case is UILabel:
-                (view as! UILabel).text = (view as! UILabel).text?.localized()
+                (view as! UILabel).text = view.baseText.localized()
             default:
                 localizeTexts(view)
             }
         
         }
+        
+        replaceNavBarButtons()
     }
     
     func replaceNavBarButtons(){
