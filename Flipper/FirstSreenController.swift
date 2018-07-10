@@ -15,9 +15,11 @@ class FirstScreenController: LocalizableUIViewController {
     var game: GameModelController?
     var vcPointer: GameViewController?
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         replaceNavBarButtons()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

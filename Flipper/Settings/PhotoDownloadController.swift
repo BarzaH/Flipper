@@ -9,18 +9,15 @@
 import UIKit
 
 class PhotoDownloadController: LocalizableUIViewController, UIPopoverPresentationControllerDelegate {
-
+    
     @IBOutlet weak var urlLabel: UILabel!
-    
-    
     @IBOutlet weak var downloadButton: UIButton!
-    
     @IBOutlet weak var sizeButton: UIBarButtonItem!
-    
     @IBOutlet weak var saveButton: UIBarButtonItem!
-    
     @IBOutlet weak var textFieldURL: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    
+    let backgroundImageManager = BackgroundImageManager.shared
     
     @IBAction func downloadPhoto(_ sender: Any) {
         let url:URL = URL(string: textFieldURL.text!)!
@@ -39,10 +36,7 @@ class PhotoDownloadController: LocalizableUIViewController, UIPopoverPresentatio
     
     
     @IBAction func save(_ sender: Any) {
-        let backgroundImageManager = BackgroundImageManager()
         backgroundImageManager.write(image: imageView.image!)
-        
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "New image"), object: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,7 +45,6 @@ class PhotoDownloadController: LocalizableUIViewController, UIPopoverPresentatio
                 pvc.permittedArrowDirections = UIPopoverArrowDirection.any
                 pvc.delegate = self
                 vc.sizeOfImage = UIImagePNGRepresentation(self.imageView.image!)?.count
-//                vc.sizeNumber.text = "\(sizeOfImage!/1024)"
             }
         }
     }
@@ -65,7 +58,12 @@ class PhotoDownloadController: LocalizableUIViewController, UIPopoverPresentatio
         self.sizeButton.title = "Show size".localized()
         self.saveButton.title = "Save".localized()
         
-        
+        self.imageView.image = BackgroundImageManager.shared.fetch() ?? UIImage(named: BackgroundImageManager.shared.imageName, in:Bundle(for: self.classForCoder), compatibleWith: traitCollection)
+    }
+    
+    @IBAction func restoreDefaultImage(_ sender: UIButton) {
+        BackgroundImageManager.shared.delete()
+        self.imageView.image = UIImage(named: BackgroundImageManager.shared.imageName, in:Bundle(for: self.classForCoder), compatibleWith: traitCollection)
     }
     
 }

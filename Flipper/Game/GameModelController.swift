@@ -9,7 +9,7 @@
 import Foundation
 
 class GameModelController{
-
+    
     private var gameModel: GameModel
     
     var signs = ["🧠", "🎃", "👹", "👿", "🧕🏻", "👨‍👩‍👦‍👦", "🧠", "🎃", "👹", "👿", "🧕🏻", "👨‍👩‍👦‍👦"]
@@ -52,16 +52,14 @@ class GameModelController{
     }
     
     func chooseCard(index: Int){
-        guard gameModel.Cards[index].isOut == false && gameModel.Cards[index].isClicked == false  else{
-            return
+        guard gameModel.Cards[index].isOut == false && gameModel.Cards[index].isClicked == false
+            else{
+                return
         }
         
-
-        if firstChosenCardIndex != nil
-        {
-            
-            if signMap[gameModel.Cards[index].id] == signMap[gameModel.Cards[firstChosenCardIndex!].id]
-            {
+        
+        if firstChosenCardIndex != nil{
+            if signMap[gameModel.Cards[index].id] == signMap[gameModel.Cards[firstChosenCardIndex!].id]{
                 gameModel.Cards[index].isOut = true
                 gameModel.Cards[firstChosenCardIndex!].isOut = true
             }
@@ -70,24 +68,19 @@ class GameModelController{
             
             firstChosenCardIndex = nil
         }
-        else
-        {
-            for ind in gameModel.Cards.indices
-            {
+        else{
+            for ind in gameModel.Cards.indices{
                 gameModel.Cards[ind].isClicked = false
             }
             
             firstChosenCardIndex = index
             gameModel.Cards[index].isClicked = true
-            
         }
     }
     
     func matchCardsAndButtons(indices: CountableRange<Int>){
         var unusedButtonsIndices = Array(indices)
-        
-        for _ in gameModel.Cards.indices
-        {
+        for _ in gameModel.Cards.indices{
             let rndm = Int(arc4random_uniform(UInt32(unusedButtonsIndices.count)))
             cardButtonMap.append(unusedButtonsIndices[rndm])
             unusedButtonsIndices.remove(at: rndm)

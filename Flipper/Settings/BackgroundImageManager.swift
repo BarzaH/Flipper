@@ -9,43 +9,46 @@
 import Foundation
 import UIKit
 
-class BackgroundImageManager{
+class BackgroundImageManager {
+    
     let fileManager: FileManager
-    
     let documentURL: URL
-    
     let documentPath: String
-    
     let filePath: URL
+    let imageName: String = "card-back"
     
-    init(){
+    static let shared = BackgroundImageManager()
+    
+    
+    private init(){
         fileManager = FileManager.default
         documentURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
         documentPath = documentURL.path
-        filePath = documentURL.appendingPathComponent("minion.png")
+        filePath = documentURL.appendingPathComponent("card-back.png")
         
     }
     
-    func fetch() -> UIImage{
+    func fetch() -> UIImage?{
         if fileManager.fileExists(atPath: filePath.path){
             return UIImage(contentsOfFile: filePath.path)!
         }
         else{
-            return UIImage(named: "minion")!
+            return nil
         }
         
     }
     
     func write(image: UIImage){
-        do{
-            if fileManager.fileExists(atPath: filePath.path){
-                try fileManager.removeItem(at: filePath)
-            }
-            
-            fileManager.createFile(atPath: filePath.path, contents: UIImagePNGRepresentation(image))
-        }catch{
-
+        if fileManager.fileExists(atPath: filePath.path){
+            try? fileManager.removeItem(at: filePath)
         }
         
+        fileManager.createFile(atPath: filePath.path, contents: UIImagePNGRepresentation(image))
+    }
+    
+    func delete(){
+        if fileManager.fileExists(atPath: filePath.path){
+            try? fileManager.removeItem(at: filePath)
+        }
     }
 }

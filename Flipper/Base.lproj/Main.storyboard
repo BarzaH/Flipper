@@ -101,11 +101,11 @@
                                 <rect key="frame" x="47" y="323" width="281" height="166"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pow-WX-nWa">
-                                        <rect key="frame" x="0.0" y="0.0" width="281" height="112"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.83109640261417939" blue="0.48203913228696316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hey-De-Fo8">
-                                        <rect key="frame" x="85.666666666666657" y="120" width="110" height="46"/>
+                                        <rect key="frame" x="85.666666666666657" y="58" width="110" height="108"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Take Photo"/>
                                         <userDefinedRuntimeAttributes>
@@ -151,30 +151,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-8h-DiQ">
-                                <rect key="frame" x="43" y="172.66666666666663" width="288.66666666666669" height="521"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-8h-DiQ">
+                                <rect key="frame" x="43" y="173" width="289" height="520"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Paste Your URL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1r-7w-BgL">
-                                        <rect key="frame" x="61.666666666666671" y="0.0" width="165.33333333333331" height="27"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="MJA-fI-N0k"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" layoutMarginsFollowReadableWidth="YES" text="Paste Your URL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1r-7w-BgL">
+                                        <rect key="frame" x="62.000000000000014" y="0.0" width="165.33333333333337" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="baseText" value="Paste Your URL"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="231" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://hdwallsource.com/img/2014/8/high-quality-flower-wallpapers-21754-22297-hd-wallpapers.jpg" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUC-Mo-JZj">
-                                        <rect key="frame" x="0.0" y="35" width="288.66666666666669" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="231" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="https://hdwallsource.com/img/2014/8/high-quality-flower-wallpapers-21754-22297-hd-wallpapers.jpg" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUC-Mo-JZj">
+                                        <rect key="frame" x="0.0" y="38" width="289" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="minion" translatesAutoresizingMaskIntoConstraints="NO" id="fb3-vS-wtU">
-                                        <rect key="frame" x="0.0" y="73" width="288.66666666666669" height="400"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="fb3-vS-wtU">
+                                        <rect key="frame" x="1.6666666666666572" y="76" width="286" height="348"/>
                                         <color key="backgroundColor" red="1" green="0.83109640261417939" blue="0.48203913228696316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="348" id="dti-Ex-FTM"/>
+                                        </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhO-VS-AFH">
-                                        <rect key="frame" x="94" y="481" width="101" height="40"/>
+                                        <rect key="frame" x="94" y="432" width="101" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Download"/>
                                         <userDefinedRuntimeAttributes>
@@ -184,21 +187,26 @@
                                             <action selector="downloadPhoto:" destination="3aS-Wh-94d" eventType="touchUpInside" id="UKX-j9-b5d"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5f-FI-cpK">
+                                        <rect key="frame" x="36.666666666666686" y="480" width="216" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Restore default image"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="baseText" value="Restore default image"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="restoreDefaultImage:" destination="3aS-Wh-94d" eventType="touchUpInside" id="xiw-A4-LEo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dUC-Mo-JZj" secondAttribute="trailing" constant="131.66666666666669" id="ERq-BU-bMJ"/>
-                                    <constraint firstItem="fb3-vS-wtU" firstAttribute="leading" secondItem="kZk-8h-DiQ" secondAttribute="leading" id="LX8-2y-D5T"/>
-                                    <constraint firstItem="dUC-Mo-JZj" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kZk-8h-DiQ" secondAttribute="leading" constant="131.66666666666666" id="OIJ-W5-RM9"/>
-                                    <constraint firstAttribute="trailing" secondItem="fb3-vS-wtU" secondAttribute="trailing" id="n1k-LO-DoZ"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kZk-8h-DiQ" firstAttribute="top" secondItem="PhB-Gh-nCO" secondAttribute="top" constant="85" id="55z-fQ-lIU"/>
+                            <constraint firstItem="PhB-Gh-nCO" firstAttribute="bottom" secondItem="kZk-8h-DiQ" secondAttribute="bottom" constant="85" id="64M-Q2-mbl"/>
                             <constraint firstItem="kZk-8h-DiQ" firstAttribute="centerX" secondItem="PhB-Gh-nCO" secondAttribute="centerX" id="WY1-V9-PX1"/>
-                            <constraint firstItem="PhB-Gh-nCO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kZk-8h-DiQ" secondAttribute="trailing" constant="44.333332061767578" id="dTn-JX-g5x"/>
-                            <constraint firstItem="kZk-8h-DiQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PhB-Gh-nCO" secondAttribute="leading" constant="43" id="sEH-Zn-kMw"/>
-                            <constraint firstItem="kZk-8h-DiQ" firstAttribute="centerY" secondItem="PhB-Gh-nCO" secondAttribute="centerY" id="sdb-KW-nve"/>
+                            <constraint firstItem="kZk-8h-DiQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PhB-Gh-nCO" secondAttribute="leading" priority="999" constant="43" id="sEH-Zn-kMw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PhB-Gh-nCO"/>
                     </view>
@@ -441,65 +449,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Flips Count: " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGR-Ud-lYq">
-                                <rect key="frame" x="77.000000000000014" y="736.66666666666663" width="221.33333333333337" height="41.333333333333371"/>
+                                <rect key="frame" x="77.000000000000014" y="742.66666666666663" width="221.33333333333337" height="35.333333333333371"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES"/>
                                 </accessibility>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="39"/>
-                                <color key="textColor" red="0.38447869065278784" green="0.99607843137254903" blue="0.2322846389169157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.9644430528805551" blue="0.1117887716392006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="baseText" value="Flips Count: "/>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HBb-Ku-c2u">
-                                <rect key="frame" x="16" y="88" width="343" height="640.66666666666663"/>
+                                <rect key="frame" x="16" y="88" width="343" height="646.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SiN-Y1-yBr">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="208.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="210.33333333333334"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYf-YN-5j4">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="208.33333333333334"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYf-YN-5j4" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="210.33333333333334"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="tYf-YN-5j4" secondAttribute="height" multiplier="79:206" id="hNb-Zy-iEJ"/>
                                                 </constraints>
                                                 <viewLayoutGuide key="safeArea" id="gMq-rn-ZzW"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjb-U4-MRg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUH-9D-CJM">
-                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="208.33333333333334"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUH-9D-CJM" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="210.33333333333334"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <viewLayoutGuide key="safeArea" id="NIe-CJ-Prg"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bk9-at-8sr"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yT2-DG-Il2">
-                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="208.33333333333334"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yT2-DG-Il2" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="210.33333333333334"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <viewLayoutGuide key="safeArea" id="GCi-PF-kvp"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G6E-Jd-QQ6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhJ-Zy-yPh">
-                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="208.33333333333334"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhJ-Zy-yPh" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="210.33333333333334"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HhJ-Zy-yPh" secondAttribute="height" multiplier="79:206" id="dV3-BN-g4x"/>
                                                 </constraints>
                                                 <viewLayoutGuide key="safeArea" id="J4z-nH-bu3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vRR-qb-fzp"/>
                                                 </connections>
@@ -507,40 +511,36 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vQF-Kw-TwI">
-                                        <rect key="frame" x="0.0" y="216.33333333333331" width="343" height="208"/>
+                                        <rect key="frame" x="0.0" y="218.33333333333331" width="343" height="210"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vs7-0X-Mqs">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="208"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vs7-0X-Mqs" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="210"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BA1-1O-lcC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeR-6Y-BxE">
-                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="208"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeR-6Y-BxE" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="210"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LnX-ko-Dzg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNM-n4-PqO">
-                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="208"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNM-n4-PqO" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="210"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FvT-1u-shl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsf-K1-1wn">
-                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="208"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsf-K1-1wn" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="210"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7Q-cD-NHW"/>
                                                 </connections>
@@ -548,40 +548,36 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QaP-MK-8cc">
-                                        <rect key="frame" x="0.0" y="432.33333333333331" width="343" height="208.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="436.33333333333331" width="343" height="210.33333333333331"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESK-xg-kpx">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="208.33333333333334"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESK-xg-kpx" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="210.33333333333334"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HB6-xg-S3a"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-1J-7Vv">
-                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="208.33333333333334"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-1J-7Vv" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="210.33333333333334"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yem-r2-hPu"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQy-oc-tK6">
-                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="208.33333333333334"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQy-oc-tK6" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="210.33333333333334"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Vx-vp-Npp"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-En-9t1">
-                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="208.33333333333334"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-En-9t1" customClass="UIGameCardView" customModule="Flipper" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="210.33333333333334"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <state key="normal" backgroundImage="minion"/>
                                                 <connections>
                                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gn6-RN-ISJ"/>
                                                 </connections>
@@ -591,7 +587,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.17784610624207736" green="0.70182966321243523" blue="0.25091985215636459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HBb-Ku-c2u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0u5-QQ-bch"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FGR-Ud-lYq" secondAttribute="trailing" constant="10" id="1XJ-Gc-g5S"/>
@@ -626,9 +622,6 @@
             <point key="canvasLocation" x="2362.4000000000001" y="32.512315270935964"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="minion" width="400" height="400"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="CkF-8d-GWp"/>
     </inferredMetricsTieBreakers>

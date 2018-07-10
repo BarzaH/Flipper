@@ -10,20 +10,15 @@ import Foundation
 
 struct GameModel
 {
+    
     var Cards:[Card] = []
     var flips: Int = 0
     
-    
     init(amountOfCards: Int){
-        
-        for _ in 0..<amountOfCards
-        {
+        for _ in 0..<amountOfCards{
             let card = Card()
-            
             Cards.append(card)
         }
-        
     }
-    
     
 }

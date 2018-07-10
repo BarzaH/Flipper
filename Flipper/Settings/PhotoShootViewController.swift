@@ -23,14 +23,14 @@ class PhotoShootViewController:  LocalizableUIViewController, UINavigationContro
         imagePicker =  UIImagePickerController()
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        present(imagePicker, animated: true, completion: nil)
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            present(imagePicker, animated: true, completion: nil)
         }
         else {
-                imagePicker.delegate = self;
-                imagePicker.sourceType = .photoLibrary
-                present(imagePicker, animated: true, completion: nil)
+            imagePicker.delegate = self;
+            imagePicker.sourceType = .photoLibrary
+            present(imagePicker, animated: true, completion: nil)
         }
     }
     
@@ -44,5 +44,5 @@ class PhotoShootViewController:  LocalizableUIViewController, UINavigationContro
         super.viewWillAppear(animated)
         self.saveButton.title = "Save".localized()
     }
-
+    
 }

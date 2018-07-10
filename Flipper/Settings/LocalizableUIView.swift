@@ -12,15 +12,14 @@ import UIKit
 @IBDesignable
 extension NSObject{
     private struct AssociatedKeys {
-      static var baseText = ""
+        static var baseText = ""
     }
     
     @IBInspectable var baseText: String! {
         get {
             guard let baseText = objc_getAssociatedObject(self, &AssociatedKeys.baseText) as? String else {
                 return String()
-            }
-            
+            }    
             return baseText
         }
         

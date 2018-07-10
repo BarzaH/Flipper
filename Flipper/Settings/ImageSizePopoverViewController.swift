@@ -11,12 +11,10 @@ import UIKit
 
 class ImageSizePopoverViewController: LocalizableUIViewController{
     
-    var sizeOfImage: Int?
-    
     @IBOutlet weak var sizeLabel: UILabel!
-    
     @IBOutlet weak var sizeNumber: UILabel!
     
+    var sizeOfImage: Int?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
